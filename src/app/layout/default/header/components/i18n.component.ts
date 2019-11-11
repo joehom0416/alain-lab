@@ -8,10 +8,14 @@ import { I18NService } from '@core';
 @Component({
   selector: 'header-i18n',
   template: `
-    <div *ngIf="showLangText" nz-dropdown [nzDropdownMenu]="langMenu" nzPlacement="bottomRight">
+    <div
+      *ngIf="showLangText"
+      nz-dropdown
+      [nzDropdownMenu]="langMenu"
+      nzPlacement="bottomRight"
+      class="alain-default__nav-item px-sm ant-dropdown-trigger"
+    >
       <i nz-icon nzType="global"></i>
-      {{ 'menu.lang' | translate }}
-      <i nz-icon nzType="down"></i>
     </div>
     <i
       *ngIf="!showLangText"

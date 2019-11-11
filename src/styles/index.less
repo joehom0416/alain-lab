@@ -2,21 +2,28 @@
 
 //Layout
 
-.alain-default .page-header{
-    margin:15px;
+.alain-default .page-header {
+  margin: 15px;
 }
 
-.csp_aside{
-    position:fixed;
-    top:48px;
-}
-.entity-tab{
-    position:fixed;
-    top:64px;
-    width:100%;
+.csp_aside {
+  position: fixed;
+  top: 48px;
 }
 
-.csp_outer_content{
-    margin-top:127px !important;
-    margin-left:224px;
+.entity-tab {
+  position: fixed;
+  top: 64px;
+  z-index: 18;
+  width: 100%;
+}
+
+.csp_outer_content {
+  margin-top: 127px !important;
+}
+
+@media (min-width: @screen-lg-min) {
+  .csp_outer_content {
+    margin-left: 224px;
+  }
 }
